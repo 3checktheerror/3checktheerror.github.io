@@ -1,5 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Purple Donut的博客</title><link>https://3checktheerror.github.io</link><description>I Don’t Finish. I Wander.</description><copyright>Purple Donut的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://3checktheerror.github.io</link></image><lastBuildDate>Mon, 09 Mar 2026 09:21:10 +0000</lastBuildDate><managingEditor>Purple Donut的博客</managingEditor><ttl>60</ttl><webMaster>Purple Donut的博客</webMaster><item><title>WGAN相关</title><link>https://3checktheerror.github.io/post/WGAN-xiang-guan.html</link><description>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Purple Donut的博客</title><link>https://3checktheerror.github.io</link><description>I Don’t Finish. I Wander.</description><copyright>Purple Donut的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://3checktheerror.github.io</link></image><lastBuildDate>Mon, 09 Mar 2026 13:14:45 +0000</lastBuildDate><managingEditor>Purple Donut的博客</managingEditor><ttl>60</ttl><webMaster>Purple Donut的博客</webMaster><item><title>Distillation &amp; Finetune相关</title><link>https://3checktheerror.github.io/post/Distillation%20%26%20Finetune-xiang-guan.html</link><description>### 流程
+1. Sample生成的数据S
+2. 读取S中的市场数据：price, volume, volatility, tick_change； 随机生成eth和usdc持仓
+3. 构造prompt，提前规定好Chain of Draft，发送给teacher model
+4. 解析响应，得到draft，action，full_response
+5. 正则解析响应，得到RECOMMENDATION：BUY / SELL / HOLD + amount
+6. 继续解析5的结果，正则替换BUY / SELL / HOLD -&gt; APE IN / APE OUT / APE NEURAL
+7. Split &amp; Save Data
+
+
+### LoRA参数设置原因
+在极度压榨显存（batch_size=1, grad_checkpoint=true, 仅微调顶部 16 层的 q, v 投影）的同时，利用激进的覆盖策略（较高的 LR 和较高的 alpha/rank 比例）确保了“知识蒸馏”在较少的步数（400步）内快速起效。</description><guid isPermaLink="true">https://3checktheerror.github.io/post/Distillation%20%26%20Finetune-xiang-guan.html</guid><pubDate>Mon, 09 Mar 2026 13:14:18 +0000</pubDate></item><item><title>WGAN相关</title><link>https://3checktheerror.github.io/post/WGAN-xiang-guan.html</link><description>
 
 ### 理论部分
 
