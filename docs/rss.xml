@@ -1,2 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Purple Donut的博客</title><link>https://3checktheerror.github.io</link><description>I Don’t Finish. I Wander.</description><copyright>Purple Donut的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://3checktheerror.github.io</link></image><lastBuildDate>Wed, 04 Mar 2026 03:34:25 +0000</lastBuildDate><managingEditor>Purple Donut的博客</managingEditor><ttl>60</ttl><webMaster>Purple Donut的博客</webMaster><item><title>测试一下</title><link>https://3checktheerror.github.io/post/ce-shi-yi-xia.html</link><description>康康这里。</description><guid isPermaLink="true">https://3checktheerror.github.io/post/ce-shi-yi-xia.html</guid><pubDate>Wed, 04 Mar 2026 03:17:06 +0000</pubDate></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Purple Donut的博客</title><link>https://3checktheerror.github.io</link><description>I Don’t Finish. I Wander.</description><copyright>Purple Donut的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://3checktheerror.github.io</link></image><lastBuildDate>Mon, 09 Mar 2026 09:21:10 +0000</lastBuildDate><managingEditor>Purple Donut的博客</managingEditor><ttl>60</ttl><webMaster>Purple Donut的博客</webMaster><item><title>WGAN相关</title><link>https://3checktheerror.github.io/post/WGAN-xiang-guan.html</link><description>
+
+### 理论部分
+
+#### 关于WGAN：
+
+&gt; 一句话总结WGAN-GP月Vanilla GAN的区别：Discriminator得到的是the degree of fake image, rather than the binary classification (real or not). 
+
+##### GAN Training思路链：[详情](https://www.youtube.com/watch?v=jNY1WBb8l4U&amp;t=1608s)
+
+1. Generator的训练: 找一组Generator参数，使从normal distribution中采样后生成的分布尽量接近于于真实分布minimize divergence between Pg and Pdata
+2. 如何计算Divergence? Although we do not know the distributions of Pg and Pdata, we can sample from them. Use database to sample Pdata and normal distribution to sample Pg
+3. Discriminator的训练：把从Pdata和Pg中sample的data混合起来，用discriminator区分。</description><guid isPermaLink="true">https://3checktheerror.github.io/post/WGAN-xiang-guan.html</guid><pubDate>Mon, 09 Mar 2026 09:20:39 +0000</pubDate></item><item><title>测试一下</title><link>https://3checktheerror.github.io/post/ce-shi-yi-xia.html</link><description>康康这里。</description><guid isPermaLink="true">https://3checktheerror.github.io/post/ce-shi-yi-xia.html</guid><pubDate>Wed, 04 Mar 2026 03:17:06 +0000</pubDate></item></channel></rss>
