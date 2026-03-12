@@ -1,5 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Purple Donut的博客</title><link>https://PeekaQiu.github.io/3checktheerror.github.io</link><description>I Don’t Finish. I Wander.</description><copyright>Purple Donut的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://PeekaQiu.github.io/3checktheerror.github.io</link></image><lastBuildDate>Wed, 11 Mar 2026 07:39:55 +0000</lastBuildDate><managingEditor>Purple Donut的博客</managingEditor><ttl>60</ttl><webMaster>Purple Donut的博客</webMaster><item><title>需求和架构分析</title><link>https://PeekaQiu.github.io/3checktheerror.github.io/post/xu-qiu-he-jia-gou-fen-xi.html</link><description>### 需求
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Purple Donut的博客</title><link>https://PeekaQiu.github.io/3checktheerror.github.io</link><description>I Don’t Finish. I Wander.</description><copyright>Purple Donut的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://PeekaQiu.github.io/3checktheerror.github.io</link></image><lastBuildDate>Thu, 12 Mar 2026 01:13:19 +0000</lastBuildDate><managingEditor>Purple Donut的博客</managingEditor><ttl>60</ttl><webMaster>Purple Donut的博客</webMaster><item><title>技术细节</title><link>https://PeekaQiu.github.io/3checktheerror.github.io/post/ji-shu-xi-jie.html</link><description>### 表结构设计
+
+#### 表
+用户，聊天记录，回测结果，关联钱包（实际上用的是内置PG中的数据），关联KOL
+
+#### 关键字段
+关联钱包：是否是聪明钱
+用户：是否是管理员
+聊天记录：发收ID，消息内容，聊天类型（私，群）
+
+### 四大内容
+
+#### 用户登陆鉴权
+首次登陆拿到系统签发的JWT Token，后续请求HTTP通过Authorization Header携带，Websocket通过URL参数传递。</description><guid isPermaLink="true">https://PeekaQiu.github.io/3checktheerror.github.io/post/ji-shu-xi-jie.html</guid><pubDate>Thu, 12 Mar 2026 01:12:45 +0000</pubDate></item><item><title>需求和架构分析</title><link>https://PeekaQiu.github.io/3checktheerror.github.io/post/xu-qiu-he-jia-gou-fen-xi.html</link><description>### 需求
 
 * 信号跟单中的止盈止损策略逻辑重构，导致用户难以判断最佳策略组合及其收益。</description><guid isPermaLink="true">https://PeekaQiu.github.io/3checktheerror.github.io/post/xu-qiu-he-jia-gou-fen-xi.html</guid><pubDate>Wed, 11 Mar 2026 07:39:30 +0000</pubDate></item><item><title>RL with DQN</title><link>https://PeekaQiu.github.io/3checktheerror.github.io/post/RL%20with%20DQN.html</link><description>### 理论
 [点这里](https://www.youtube.com/watch?v=x83WmvbRa2I)
