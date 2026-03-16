@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Purple Donut的博客</title><link>https://PeekaQiu.github.io/3checktheerror.github.io</link><description>I Don’t Finish. I Wander.</description><copyright>Purple Donut的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://PeekaQiu.github.io/3checktheerror.github.io</link></image><lastBuildDate>Mon, 16 Mar 2026 05:12:43 +0000</lastBuildDate><managingEditor>Purple Donut的博客</managingEditor><ttl>60</ttl><webMaster>Purple Donut的博客</webMaster><item><title>业务逻辑：钱包/信号跟单</title><link>https://PeekaQiu.github.io/3checktheerror.github.io/post/ye-wu-luo-ji-%EF%BC%9A-qian-bao---xin-hao-gen-dan.html</link><description>### 总体概览
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Purple Donut的博客</title><link>https://PeekaQiu.github.io/3checktheerror.github.io</link><description>I Don’t Finish. I Wander.</description><copyright>Purple Donut的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://PeekaQiu.github.io/3checktheerror.github.io</link></image><lastBuildDate>Mon, 16 Mar 2026 05:33:16 +0000</lastBuildDate><managingEditor>Purple Donut的博客</managingEditor><ttl>60</ttl><webMaster>Purple Donut的博客</webMaster><item><title>业务逻辑：钱包/信号跟单</title><link>https://PeekaQiu.github.io/3checktheerror.github.io/post/ye-wu-luo-ji-%EF%BC%9A-qian-bao---xin-hao-gen-dan.html</link><description>### 总体概览
 
 **钱包跟单相关代码主要在 `apps/debot_monitor_center` 下，分三大块：**
 
@@ -32,7 +32,17 @@
 技术栈： Kafka / Redis / ClickHouse / InfluxDB / Mongo / Postgres
 主体业务：从节点 RPC 拉取区块/日志，解析 DEX 交易与资金流，产出结构化事件进入 Kafka/存储，并通过规则引擎生成告警，最终分发至 Redis 队列与终端推送
 
-1. 数据来源：一条是 Kafka（区块或交易聚合后的数据流），另一条是 Redis PubSub（更实时的 swap 事件流）。</description><guid isPermaLink="true">https://PeekaQiu.github.io/3checktheerror.github.io/post/ye-wu-liu-cheng-shu-li.html</guid><pubDate>Thu, 12 Mar 2026 07:18:59 +0000</pubDate></item><item><title>技术细节</title><link>https://PeekaQiu.github.io/3checktheerror.github.io/post/ji-shu-xi-jie.html</link><description>### 表结构设计
+多源链上数据接入 -&gt; 统一流水线处理 -&gt; 规则判断 -&gt; 配置驱动执行 -&gt; 告警/跟单闭环 -&gt; 钱包分析与一致性沉淀
+
+
+
+
+
+
+
+
+
+。</description><guid isPermaLink="true">https://PeekaQiu.github.io/3checktheerror.github.io/post/ye-wu-liu-cheng-shu-li.html</guid><pubDate>Thu, 12 Mar 2026 07:18:59 +0000</pubDate></item><item><title>技术细节</title><link>https://PeekaQiu.github.io/3checktheerror.github.io/post/ji-shu-xi-jie.html</link><description>### 表结构设计
 
 #### 表
 用户，聊天记录，回测结果，关联钱包（实际上用的是内置PG中的数据），关联KOL
