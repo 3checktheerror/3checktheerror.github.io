@@ -1,5 +1,17 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Purple Donut的博客</title><link>https://PeekaQiu.github.io/3checktheerror.github.io</link><description>I Don’t Finish. I Wander.</description><copyright>Purple Donut的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://PeekaQiu.github.io/3checktheerror.github.io</link></image><lastBuildDate>Mon, 16 Mar 2026 06:01:29 +0000</lastBuildDate><managingEditor>Purple Donut的博客</managingEditor><ttl>60</ttl><webMaster>Purple Donut的博客</webMaster><item><title>Part1-多源链上数据接入</title><link>https://PeekaQiu.github.io/3checktheerror.github.io/post/Part1--duo-yuan-lian-shang-shu-ju-jie-ru.html</link><description>## 1. 为什么要把数据放在 Kafka 和 Redis 分开存储？
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Purple Donut的博客</title><link>https://PeekaQiu.github.io/3checktheerror.github.io</link><description>I Don’t Finish. I Wander.</description><copyright>Purple Donut的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://PeekaQiu.github.io/3checktheerror.github.io</link></image><lastBuildDate>Wed, 18 Mar 2026 04:18:53 +0000</lastBuildDate><managingEditor>Purple Donut的博客</managingEditor><ttl>60</ttl><webMaster>Purple Donut的博客</webMaster><item><title>有意思的话题</title><link>https://PeekaQiu.github.io/3checktheerror.github.io/post/you-yi-si-de-hua-ti.html</link><description>### 模型架构
+[Residual Connections](https://x.com/_avichawla/status/2033472650836914495)
+
+### 模型工具
+[vLLM](https://www.youtube.com/watch?v=McLdlg5Gc9s)
+[KV Cache原理](https://www.youtube.com/watch?v=80bIUggRJf4)
+
+### MCP通信
+[MCP通信](https://www.youtube.com/watch?v=IjISe8ThHvY)
+
+
+
+。</description><guid isPermaLink="true">https://PeekaQiu.github.io/3checktheerror.github.io/post/you-yi-si-de-hua-ti.html</guid><pubDate>Wed, 18 Mar 2026 04:18:20 +0000</pubDate></item><item><title>Part1-多源链上数据接入</title><link>https://PeekaQiu.github.io/3checktheerror.github.io/post/Part1--duo-yuan-lian-shang-shu-ju-jie-ru.html</link><description>## 1. 为什么要把数据放在 Kafka 和 Redis 分开存储？
 先说结论：
 
 这个项目不是“随便用了两个中间件”，而是根据两类数据的业务特征，做了明确分工：
